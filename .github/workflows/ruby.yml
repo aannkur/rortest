@@ -27,3 +27,4 @@ jobs:
          script: |
           cd /var/www/html/gbs
           git pull origin main
+          bundle install
