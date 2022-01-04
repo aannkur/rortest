@@ -14,14 +14,9 @@ on:
     branches: [ main ]
 
 jobs:
-  test:
-
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        ruby-version: ['2.6', '2.7', '3.0']
-
-    steps:
+  deploy:
+     runs-on: ubuntu-latest
+     steps:
       - uses: appleboy/ssh-action@master
         name: executing remote ssh commands using password
         with:
