@@ -29,3 +29,4 @@ jobs:
           git pull origin main
           source ~/.profile
           bundle install
+          sudo service apache2 restart
